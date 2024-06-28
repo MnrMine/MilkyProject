@@ -1,0 +1,66 @@
+﻿@model  MilkyProject.WebUI.Dtos.AboutDtos.ResultAboutDto
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Default/_AdminLayout.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="page-header">
+        <h3 class="page-title">Hakkımızda </h3>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              
+              
+            </ol>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Hakkımızda</h4>
+                    <p class="card-description">
+                        Aşagıdaki tablodan  hakkımızda bilgilerini görüntüleyebilir,uzerinde işlem yapabilirsiniz.
+                    </p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Başlık</th>
+                                    <th>Açıklama</th>
+                                    <th>Sil</th>
+                                    <th>Güncelle</th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                
+                                   
+                                    <tr>
+                                        
+                                         <td>@Model.aboutID</td> 
+                                        <td>@Model.title</td>
+                                        <td>@Model.description</td>
+                                       
+                                        <td><a href="/Admin/About/DeleteAbout/@Model.aboutID" class="btn btn-danger">Sil</a></td>
+                                        <td><a href="Admin/About/UpdateAbout//@Model.aboutID" class="btn btn-success">Güncelle</a></td>
+                                       
+                                    </tr>
+                                
+
+
+
+
+                            </tbody>
+                        </table>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,52 @@
+﻿@model MilkyProject.WebUI.Dtos.SliderDtos.UpdateSliderDto
+@{
+    ViewData["Title"] = "UpdateSlider";
+    Layout = "~/Areas/Admin/Views/Default/_AdminLayout.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="page-header">
+        <h3 class="page-title">Slider Güncelleme  Sayfası</h3>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#"> Slider İşlemleri</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Slider Düzenleme </li>
+            </ol>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Slider Düzenleme Paneli</h4>
+                    <p class="card-description">
+                        Aşağıdaki tablodan slider üzerinde işlem yapabilirsiniz
+                    </p>
+                    <div class="table-responsive">
+                        <form method="post">
+
+
+                            <label>Slider Id</label>
+                            <input type="text" asp-for="sliderId" class="form-control" />
+
+                            
+                            <label>Resim</label>
+                            <input type="text" asp-for="imageUrl" class="form-control" />
+                            <br />
+                            <label>Açıklama1 </label>
+                            <input type="text" asp-for="description1" class="form-control" />
+                            <br />
+                            <label>Açıklama2 </label>
+                            <input type="text" asp-for="description1" class="form-control" />
+                            <br />
+                            <button class="btn btn-info">Slider Güncelle</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

@@ -1,0 +1,53 @@
+﻿@model MilkyProject.WebUI.Dtos.TestimonialDtos.UpdateTestimonialDto
+@{
+    ViewData["Title"] = "UpdateTestimonial";
+    Layout = "~/Areas/Admin/Views/Default/_AdminLayout.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="page-header">
+        <h3 class="page-title">Referans Güncelleme  Sayfası</h3>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Referans İşlemleri</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Referans Düzenleme </li>
+            </ol>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Referans Düzenleme Paneli</h4>
+                    <p class="card-description">
+                        Aşağıdaki tablodan referans üzerinde işlem yapabilirsiniz
+                    </p>
+                    <div class="table-responsive">
+                        <form method="post">
+
+                            @* <input type="hidden" asp-for="CategoryId" class="form-control" />
+                            <input type="hidden" asp-for="AppUserId" class="form-control" />
+                            <input type="hidden" asp-for="WriterId" class="form-control" /> *@
+                            <label>Referans Id</label>
+                            <input type="text" asp-for="testimonialID" class="form-control" />
+                            <label>Referans Adı </label>
+                            <input type="text" asp-for="name" class="form-control" />
+
+                            <label>Resim</label>
+                            <input type="text" asp-for="imageUrl" class="form-control" />
+                            <br />
+                            <label>Açıklama</label>
+                            <input type="text" asp-for="description" class="form-control" />
+                            <br />
+
+                            <button class="btn btn-info">Referans Güncelle</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
